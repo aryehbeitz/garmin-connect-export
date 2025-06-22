@@ -94,3 +94,13 @@ License
 Thank You
 ---------
 Thanks for using this script and I hope you find it as useful as I do! :smile:
+
+Docker Container
+----------------
+
+You can run this tool in Docker. After building the image, mount a host directory for data output and run:
+
+```bash
+docker build -t garmin-connect-export .
+docker run --rm -it -v "$(pwd):/data" garmin-connect-export --count all
+```
